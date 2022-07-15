@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description"
+    content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <!-- Twitter meta-->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@pratikborsadiya">
+  <meta property="twitter:creator" content="@pratikborsadiya">
+  <!-- Open Graph Meta-->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vali Admin">
+  <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+  <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+  <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+  <meta property="og:description"
+    content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <title>Blank Page - Vali Admin</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo_c.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="app sidebar-mini">
+  <!-- Navbar-->
+  <header class="app-header">
+    <div>
+      <a class="app-header__logo"><img src="images/logo_blanco.png" width="70px" height="30px" aspect-ratio = "auto 70 / 30" alt="siguelo"></a>
+    </div>
+    <!-- Sidebar toggle button--> 
+    
+    <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+
+    <!-- <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><i class="fas fa-bars"></i></a> -->
+
+    <div class="btn-siguelo  text-traccar height-centrar" onClick='window.open("../")'>
+      <div style="margin-top: 4px; width: 76px; text-align: center;">Rastreo</div>
+    </div>
+
+    <div class="btn-siguelo text-traccar height-centrar" style="margin-left: 5px !important;"
+      onClick='window.open("../rutas")'>
+      <div style="margin-top: 4px; width: 69px; text-align: center;">Rutas</div>
+    </div>
+
+    <!-- Navbar Right Menu-->
+    <ul class="app-nav">
+
+      <!--Notification Menu-->
+
+      <div class="bd-highlight mr-2">
+
+        <div class="selectbox">
+          <div class="cbx" id="select">
+            <img src="assets/gear.svg" style="width: 15px; opacity: 0.4; margin-left: 3px;">
+            <img src="assets/down-arrow.svg" style="width: 10px; opacity: 0.6;  margin-left: 8px; margin-bottom: 1px;">
+          </div>
+
+          <div class="opciones" id="opciones">
+            <div class="contenido-opcion" id="sobremi" onclick="requestClose()">
+              <object id="afectado" class="" type="image/svg+xml" data="assets/sign-out-option.svg"
+                class="icon icon-bell" style="width: 15px; margin-right: 14px;">
+              </object>
+              <div>
+                Salir
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </ul>
+  </header>
+  <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+  <aside class="app-sidebar">
+    <ul class="app-menu">
+
+      <li id="gstDrw-Tarjeta" name="itemSidebar" onclick="sgd_load(this)"><a class="app-menu__item"><i
+            class="app-menu__icon fa fa-user-circle"></i><span class="app-menu__label"> Seguridad</span></a></li>
+      <li id="gstDrw-Tarjeta" name="itemSidebar" onclick="algo_load(this)"><a class="app-menu__item"><i
+            class="app-menu__icon fa fa-user-circle"></i><span class="app-menu__label"> Algo</span></a></li>
+
+    </ul>
+  </aside>
+  <main class="app-content">
+
+
+    <div id="root">
+
+    </div>
+    </div>
+  </main>
+  <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  <!-- Page specific javascripts-->
+  <!-- Google analytics script-->
+  <script type="text/javascript">
+    if (document.location.hostname == 'pratikborsadiya.in') {
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72504830-1', 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
+
+  <script src="js/seguridad/seguridad.js"></script>
+  <script src="js/algo/algo.js"></script>
+
+</body>
+
+</html>
